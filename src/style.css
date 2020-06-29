@@ -1,0 +1,101 @@
+body {
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.container {
+  margin: 30px;
+}
+
+.iconGeo {
+  display: inline-block;
+  margin: 0 auto;
+  left: 5;
+  right: 5;
+  position: static;
+}
+
+.degree {
+  border: solid;
+  text-decoration: none;
+  color: #f5a31a;
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 5px;
+  font-size: 15px;
+  font-family: "El Messiri", sans-serif;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-family: "El Messiri", sans-serif;
+  text-shadow: 3px 3px 6px rgba(37, 39, 89, 0.3);
+  color: white;
+}
+
+.minorTemp {
+  font-family: "El Messiri", sans-serif;
+  font-size: 15px;
+  width: 250px;
+  height: 100px;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  top: 1em;
+  right: 5em;
+  color: blue;
+}
+
+li {
+  font-size: 15px;
+  list-style: none;
+}
+
+.iconyThings {
+  color: #ba3660;
+}
+
+.weatherApp {
+  position: static;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  max-width: 700px;
+  padding: 20px;
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 3px 3px 6px rgba(37, 39, 89, 0.3);
+}
+
+.firstDay,
+.secondDay,
+.thirdDay,
+.fourthDay,
+.fifthDay,
+.sixthDay {
+  border: solid;
+  border-radius: 10px;
+  border-width: 4px;
+  border-color: #ba3660;
+  text-align: center;
+  margin: 5px 0 5px 0;
+  float: none;
+  clear: both;
+  width: 100px;
+  display: inline-block;
+  font-family: "El Messiri", sans-serif;
+}
+
+.firstDay:hover,
+.secondDay:hover,
+.thirdDay:hover,
+.fourthDay:hover,
+.fifthDay:hover,
+.sixthDay:hover {
+  border-color: #ed807e;
+  box-shadow: 3px 3px 6px rgba(37, 39, 89, 0.3);
+}
