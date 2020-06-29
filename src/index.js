@@ -56,8 +56,15 @@ function displayWeather(response) {
 
   temperatureElement.innerHTML = Math.round(fTemperature);
 
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = response.data.weather[0].description;
+
+  let descriptionPic = document.querySelector("#description-pic");
+  descriptionPic.innerHTML = `<img
+    src="http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png"/>`;
+
   let feelsLike = document.querySelector("#feels-like");
-  feelsLike.innerHTML = `  Feels like: ${Math.round(
+  feelsLike.innerHTML = ` Feels like: ${Math.round(
     response.data.main.feels_like
   )}`;
 
