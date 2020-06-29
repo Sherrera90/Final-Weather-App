@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://kit.fontawesome.com/617a156481.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;600&family=Lobster&family=Quicksand:wght@400;500&display=swap"
+        rel="stylesheet">
+
+        
+
+    <title>Parcel Sandbox</title>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" placeholder="Enter a city..." autocomplete="off" autofocus="on"
+            id="city-input" class="citySearch" />
+        <input type="submit" value="Search" class="searchKey" id="search-form" />
+                &nbsp;
+                    <button id="location-icon" class="iconGeo">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </button>
+
+                        <a href="#" class="degree" id="celsius-link">
+                            C°
+                        </a>
+              
+                    <a href="#"  class="degree" id="fahrenheit-link">
+                            F°
+                    </a>
+
+                <h1 id="city" style="font-size: 50px">
+                    Atlanta
+                </h1>
+                <h2><strong id="temperature"></strong></h2>
+                <h3 id="day-display" style="font-size:35px">
+                    The time
+                </h3>
+                
+        <div class="minorTemp">
+            <ul>
+            <li id="description">
+                                </li> 
+                <li class= "far fa-flag">
+                <span class ="iconyThings" id="feels-like"> </span>
+                </li>
+                    </br>
+                <li  class="far fa-wind">
+                    <span class ="iconyThings" id ="current-wind"> </span>
+                </li>
+                    </br>
+                <li class="far fa-tint"> 
+                <span class ="iconyThings"id ="current-humidity"> </span>
+                </li>
+            </ul>
+         </div>
+
+        <div class="weatherApp">
+            <div class="fiveDayWeather" id ="forecast">
+                    <div class="firstDay">
+                        <h5>
+                            <strong id="dayOne">
+                                MON 4
+                            </strong>
+                        </h5>
+                        <span id="icon">sunny</span>!
+                        <strong>
+                            <span class="temp" id="maxTempToday">
+                                77 Fº
+                            </span>
+                        </strong>
+                    </div>
+                    <div class="secondDay">
+                        <h5>
+                            <strong id="dayTwo">
+                                TUE 5
+                            </strong>
+                        </h5>
+                        <span id="icon"></span>!
+                        <strong>
+                            <span class="temp" id="maxTempToday">
+                                77 Fº
+                            </span>
+                        </strong>
+                    </div>
+
+                    <div class="thirdDay">
+                        <h5>
+                            <strong id="dayThree">
+                                WED 6
+                            </strong>
+                        </h5>
+                        <span id="icon">sunny</span>!
+                        <strong>
+                            <span class="temp" id="maxTempThird">
+                                77 Fº
+                            </span>
+                        </strong>
+                    </div>
+
+                    <div class="fourthDay">
+                        <h5><strong id="dayFour">
+                                THU 7
+                            </strong>
+                        </h5>
+                        <span id="icon">sunny</span>!
+                        <strong>
+                            <span class="temp" id="maxTempFourth">
+                                77 Fº
+                            </span>
+                        </strong>
+                    </div>
+
+                    <div class="fifthDay">
+                        <h5>
+                            <strong id="dayFive">
+                                FRI 8
+                            </strong>
+                        </h5>
+                        <span id="icon">sunny</span>!
+                        <strong>
+                            <span class="temp" id="maxTempFifth">
+                                77 Fº
+                            </span>
+                        </strong>
+                    </div>
+                    <div class="sixthDay">
+                        <h5><strong id="daySix">
+                                SAT 9
+                            </strong>
+                        </h5>
+                        <span id="icon">sunny</span>!
+                        <strong>
+                            <span class="temp" id="maxTempSixth">
+                                77 Fº
+                            </span>
+                        </strong>
+                    </div>
+            </div>
+         </div>
+
+
+    <p style="font-size:10px">
+        <a href="https://github.com/Sherrera90/Steph-Weather-App" target="_blank"> Open-source code</a> by Stephanie
+        Herrera
+    </p>
+
+    <script src="src/index.js">
+    </script>
+    </div>
+</body>
+</html>
